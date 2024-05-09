@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "r+VsHaPOFW6TlbESIFSw0JIxO/x7XuDayDddRScAn8IfhN8b3rsR35d4zPdIAPCF70vE29FwQxSJVt0X8IO/iA==",
+  "dgSpecHash": "n0/rpIisfQqgLjD1xwY/OCNTZgQ40zNVvVJad/WdYyjFyC+EMLPVU1D3CzC6890/cjJLzRQ/JX20IdbvF2aMRA==",
   "success": true,
-  "projectFilePath": "D:\\My_Game\\cs\\somelern\\somelern\\somelern.csproj",
+  "projectFilePath": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\somelern.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\derpe\\.nuget\\packages\\blazor3d\\0.1.42\\blazor3d.0.1.42.nupkg.sha512",
     "C:\\Users\\derpe\\.nuget\\packages\\microsoft.aspnetcore.authorization\\6.0.10\\microsoft.aspnetcore.authorization.6.0.10.nupkg.sha512",

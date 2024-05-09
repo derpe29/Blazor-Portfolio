@@ -632,11 +632,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\My_Game\\cs\\somelern\\somelern\\somelern.csproj",
+      "projectUniqueName": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\somelern.csproj",
       "projectName": "somelern",
-      "projectPath": "D:\\My_Game\\cs\\somelern\\somelern\\somelern.csproj",
+      "projectPath": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\somelern.csproj",
       "packagesPath": "C:\\Users\\derpe\\.nuget\\packages\\",
-      "outputPath": "D:\\My_Game\\cs\\somelern\\somelern\\obj\\",
+      "outputPath": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
