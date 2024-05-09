@@ -1,43 +1,43 @@
 {
   "Files": [
     {
-      "Id": "D:\\My_Game\\cs\\somelern\\somelern\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\somelern.bundle.scp.css",
+      "Id": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\somelern.bundle.scp.css",
       "PackagePath": "staticwebassets\\somelern.bundle.scp.css"
     },
     {
-      "Id": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\app.css",
+      "Id": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\assets\\blazor3d.glb",
+      "Id": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\assets\\blazor3d.glb",
       "PackagePath": "staticwebassets\\assets\\blazor3d.glb"
     },
     {
-      "Id": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\assets\\smile_tears.glb",
+      "Id": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\assets\\smile_tears.glb",
       "PackagePath": "staticwebassets\\assets\\smile_tears.glb"
     },
     {
-      "Id": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Id": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Id": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\energy.gif",
+      "Id": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\energy.gif",
       "PackagePath": "staticwebassets\\energy.gif"
     },
     {
-      "Id": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\favicon.png",
+      "Id": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\github.png",
+      "Id": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\github.png",
       "PackagePath": "staticwebassets\\github.png"
     },
     {
-      "Id": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\videoplayback.mp3",
+      "Id": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\videoplayback.mp3",
       "PackagePath": "staticwebassets\\videoplayback.mp3"
     },
     {

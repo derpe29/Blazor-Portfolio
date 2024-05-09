@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4ASKFH/wmJRLgfLie/knQNHz+YI6qkYxvwDf70WNnus=",
+  "Hash": "+ne+t6b2rPwQjhbmHxqs5/yvgcYRegQ7eFn33tBN7Us=",
   "Source": "somelern",
   "BasePath": "_content/somelern",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "somelern\\wwwroot",
       "Source": "somelern",
-      "ContentRoot": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\",
+      "ContentRoot": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\",
       "BasePath": "_content/somelern",
       "Pattern": "**"
     }
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "C:\\Users\\derpe\\.nuget\\packages\\blazor3d\\0.1.42\\staticwebassets\\js\\bundle.js.LICENSE.txt"
     },
     {
-      "Identity": "D:\\My_Game\\cs\\somelern\\somelern\\obj\\Release\\net8.0\\scopedcss\\bundle\\somelern.styles.css",
+      "Identity": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\obj\\Release\\net8.0\\scopedcss\\bundle\\somelern.styles.css",
       "SourceId": "somelern",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\My_Game\\cs\\somelern\\somelern\\obj\\Release\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\obj\\Release\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/somelern",
       "RelativePath": "somelern.styles.css",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\My_Game\\cs\\somelern\\somelern\\obj\\Release\\net8.0\\scopedcss\\bundle\\somelern.styles.css"
+      "OriginalItemSpec": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\obj\\Release\\net8.0\\scopedcss\\bundle\\somelern.styles.css"
     },
     {
-      "Identity": "D:\\My_Game\\cs\\somelern\\somelern\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\somelern.bundle.scp.css",
+      "Identity": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\somelern.bundle.scp.css",
       "SourceId": "somelern",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\My_Game\\cs\\somelern\\somelern\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/somelern",
       "RelativePath": "somelern.bundle.scp.css",
       "AssetKind": "All",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\My_Game\\cs\\somelern\\somelern\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\somelern.bundle.scp.css"
+      "OriginalItemSpec": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\obj\\Release\\net8.0\\scopedcss\\projectbundle\\somelern.bundle.scp.css"
     },
     {
-      "Identity": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\app.css",
+      "Identity": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\app.css",
       "SourceId": "somelern",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\",
+      "ContentRoot": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\",
       "BasePath": "_content/somelern",
       "RelativePath": "app.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\app.css"
     },
     {
-      "Identity": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\assets\\blazor3d.glb",
+      "Identity": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\assets\\blazor3d.glb",
       "SourceId": "somelern",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\",
+      "ContentRoot": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\",
       "BasePath": "_content/somelern",
       "RelativePath": "assets/blazor3d.glb",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\blazor3d.glb"
     },
     {
-      "Identity": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\assets\\smile_tears.glb",
+      "Identity": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\assets\\smile_tears.glb",
       "SourceId": "somelern",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\",
+      "ContentRoot": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\",
       "BasePath": "_content/somelern",
       "RelativePath": "assets/smile_tears.glb",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\smile_tears.glb"
     },
     {
-      "Identity": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\bootstrap\\bootstrap.min.css",
+      "Identity": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\bootstrap\\bootstrap.min.css",
       "SourceId": "somelern",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\",
+      "ContentRoot": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\",
       "BasePath": "_content/somelern",
       "RelativePath": "bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "somelern",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\",
+      "ContentRoot": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\",
       "BasePath": "_content/somelern",
       "RelativePath": "bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\energy.gif",
+      "Identity": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\energy.gif",
       "SourceId": "somelern",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\",
+      "ContentRoot": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\",
       "BasePath": "_content/somelern",
       "RelativePath": "energy.gif",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\energy.gif"
     },
     {
-      "Identity": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\favicon.png",
+      "Identity": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\favicon.png",
       "SourceId": "somelern",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\",
+      "ContentRoot": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\",
       "BasePath": "_content/somelern",
       "RelativePath": "favicon.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.png"
     },
     {
-      "Identity": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\github.png",
+      "Identity": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\github.png",
       "SourceId": "somelern",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\",
+      "ContentRoot": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\",
       "BasePath": "_content/somelern",
       "RelativePath": "github.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\github.png"
     },
     {
-      "Identity": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\videoplayback.mp3",
+      "Identity": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\videoplayback.mp3",
       "SourceId": "somelern",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\My_Game\\cs\\somelern\\somelern\\wwwroot\\",
+      "ContentRoot": "D:\\My_Game\\cs\\somelern\\Blazor-Portfolio\\wwwroot\\",
       "BasePath": "_content/somelern",
       "RelativePath": "videoplayback.mp3",
       "AssetKind": "All",
