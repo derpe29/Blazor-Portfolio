@@ -1,0 +1,20 @@
+#gamelist[b-sii9xsyffx]{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+iframe[b-sii9xsyffx]{
+    margin-bottom: 3vh;
+    margin-right: 3vw;
+    width: 20vw;
+    height: 20vh;
+}
+
+h3[b-sii9xsyffx] {
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+    -webkit-text-stroke: 0.1vw black;
+    margin-bottom: 3.5vh;
+}

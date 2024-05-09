@@ -1,0 +1,113 @@
+﻿@page "/flappy"
+@rendermode InteractiveServer
+@using System.Diagnostics
+@using somelern.Components.Pages.Prefabs
+@inject NavigationManager manager;
+@using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage
+@inject ProtectedSessionStorage ProtectedSessionStore
+
+<PageTitle>Flappy</PageTitle>
+
+<div id="player" style="transform: translate(@x,@y);"></div>
+
+<Wall play=@play velocity=@gamespeed startX=110 playerX=@_x playerY=@_y playing=PlayChange/>
+<Wall play=@play velocity=@gamespeed startX=140 playerX=@_x playerY=@_y playing=PlayChange/>
+<Wall play=@play velocity=@gamespeed startX=170 playerX=@_x playerY=@_y playing=PlayChange/>
+<Wall play=@play velocity=@gamespeed startX=200 playerX=@_x playerY=@_y playing=PlayChange/>
+
+<div id="floor"></div>
+
+@if (ready) {
+	<button id="jumpButton" @onclick="@Jump" />
+	<h1>Score: @score</h1>
+	<h1>Record: @record</h1>
+}
+
+@code {
+	private string x = "20vw";
+	private string y = "20vh";
+	private double _x = 20;
+	private double _y = 20;
+	private double velosity = 0;
+	private bool play = false;
+	private bool ready = false;
+	private bool reseting = false;
+	private double gamespeed = 0.3;
+	private int score = 0;
+	private int record = 0;
+
+	protected override async Task OnInitializedAsync()
+	{
+		await Task.Delay(1000);
+		ready = true;
+	}
+
+	protected override async Task OnAfterRenderAsync(bool firstRender)
+	{
+		if (firstRender)
+		{
+			var result = await ProtectedSessionStore.GetAsync<int>("record");
+			record = result.Success ? result.Value : 0;
+		}
+	}
+
+	private async Task Update()
+	{
+		if (!play) return;
+		await Task.Delay(20);
+
+		Move();
+
+		StateHasChanged();
+		Update();
+	}
+
+	private void Move()
+	{
+		velosity -= 0.05;
+		_y -= velosity;
+		if (_y > 82.8 || _y < -0.8)
+		{
+			play = false;
+			Reset();
+		}
+		x = _x.ToString().Replace(',','.') + "vw";
+		y = _y.ToString().Replace(',', '.') + "vh";
+	}
+
+
+	private async Task GameSpeeder()
+	{
+		if (!play) return;
+		await Task.Delay(1000);
+		score++;
+		gamespeed += 0.005;
+		GameSpeeder();
+	}
+
+	private void Jump()
+	{
+		velosity = 1;
+		if (!play)
+		{
+			play = true;
+			Update();
+			GameSpeeder();
+		}
+	}
+
+	private void PlayChange(bool value)
+	{
+		play = value;
+		Reset();
+	}
+
+	private async Task Reset()
+	{
+		if (reseting) return;
+		reseting = true;
+		if(score > record) await ProtectedSessionStore.SetAsync("record", score);
+		await Task.Delay(1000);
+		manager.NavigateTo("/flappy", true);
+	}
+}

@@ -1,0 +1,78 @@
+@rendermode InteractiveServer
+@using System.Diagnostics
+
+<div style="
+	width: 5vw;
+	height: 40vh;
+	position:fixed;
+	background-color:#fed5a3;
+	transform:translate(@x,@y);
+	border-radius: 1vmin;
+	box-shadow: rgba(0,0,0,0.3) 0.5vmin 0.5vmin;
+	
+"></div>
+
+@code {
+	[Parameter]
+	public double startX { get; set; }
+	[Parameter]
+	public bool play { get; set; }
+	[Parameter]
+	public double velocity { get; set; }
+	[Parameter]
+	public double playerX { get; set; }
+	[Parameter]
+	public double playerY { get; set; }
+	[Parameter]
+	public EventCallback<bool> playing { get; set; }
+
+	private string x = "110vw";
+	private double _x = 110;
+	private string y = "48vh";
+	private double _y = 48;
+	private bool reseting = false;
+
+	protected override async Task OnInitializedAsync()
+	{
+		_y = new Random().Next(50) - 1.8;
+		_x = startX;
+		Update();
+	}
+
+	private async Task Update()
+	{
+		await Task.Delay(20);
+		DethCheck();
+		if (play)
+		{
+			Move();
+		}
+		StateHasChanged();
+		Update();
+	}
+
+	private void Move()
+	{
+		_x -= velocity;
+		if (_x < -velocity*20){
+			_x = 110;
+			_y = new Random().Next(6) * 10 - 1.8;
+		}
+		y = _y.ToString().Replace(',','.') + "vh";
+		x = _x.ToString().Replace(',', '.') + "vw";
+	}
+
+	private void DethCheck()
+	{
+		if (_x - playerX < 5 && _x-playerX > -5)
+		{
+			if (_y - playerY < 5 && _y - playerY > -40)
+			{
+				playing.InvokeAsync(false);
+			}
+		}
+
+
+	}
+
+}

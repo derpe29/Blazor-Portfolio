@@ -1,0 +1,47 @@
+#energy[b-xmlrkky0qm]{
+    width:30vw;
+    position:absolute;
+}
+
+#github[b-xmlrkky0qm] {
+    position: absolute;
+    width: 8vw;
+}
+
+#github :hover[b-xmlrkky0qm] {
+    transform: scale(1.2);
+}
+
+#githubico[b-xmlrkky0qm] {
+    border-radius: 50%;
+    width: 8vw;
+    transition: all .3s ease-out;
+}
+
+#energyico[b-xmlrkky0qm]{
+    width:100%;
+}
+
+#devbody[b-xmlrkky0qm] {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gitButton[b-xmlrkky0qm] {
+    border: none;
+    background-color: transparent;
+    width: 8vw;
+    height: 8vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    transform:translate(0,-0.5vh);
+}
+
+h1[b-xmlrkky0qm] {
+    text-align: center;
+    padding-top: 10vw;
+}

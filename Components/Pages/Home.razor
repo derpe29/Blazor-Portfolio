@@ -1,0 +1,115 @@
+﻿@page "/"
+@rendermode InteractiveServer
+@using HomagGroup.Blazor3D.Cameras
+@using HomagGroup.Blazor3D.Events
+@using HomagGroup.Blazor3D.Viewers
+@using HomagGroup.Blazor3D.Settings
+@using HomagGroup.Blazor3D.Scenes
+@using HomagGroup.Blazor3D.Lights
+@using HomagGroup.Blazor3D.Maths
+@using HomagGroup.Blazor3D.Materials
+@using HomagGroup.Blazor3D.Objects
+@using HomagGroup.Blazor3D.Geometires
+@using HomagGroup.Blazor3D.Enums
+@using System.Diagnostics
+@implements IDisposable
+
+<PageTitle>Home</PageTitle>
+
+<h1>Welcome to Ruslan Ermilov's portfolio :)</h1>
+
+<div id="three">
+	<Viewer @ref="View3D1" Camera=@camera ViewerSettings=@settings Scene=scene />
+</div>
+
+
+
+
+@code {
+    private Viewer View3D1 = null!;
+    private Guid loadedObjectGuid = Guid.NewGuid();
+    private Camera camera = new PerspectiveCamera()
+        {
+            Position = new Vector3(0.01, 0.065, 0.03),
+            LookAt = new Vector3(0, 0.07, 0),
+            Near = 0.001,
+            Far = 100,
+            AnimateRotationSettings = new AnimateRotationSettings()
+            {
+                AnimateRotation = true,
+                Radius = 0.03,
+                ThetaY = 0,
+                StopAnimationOnOrbitControlMove = true
+        }
+
+    };
+    private Scene scene = new Scene() { BackGroundColor = "bisque" };
+    private ViewerSettings settings = new ViewerSettings()
+        {
+            ShowViewHelper = false,
+            WebGLRendererSettings = new WebGLRendererSettings()
+            {
+                Alpha = true
+            }
+        };
+
+    protected override Task OnInitializedAsync()
+    {
+        scene.Add(new AmbientLight(){ 
+            Color = "white",
+            Intensity = 2
+        });
+        scene.Add(new PointLight()
+            {
+                Intensity = 0.5f,
+                Position = new Vector3(10, 10, 10),
+                Color = "bisque"
+            });
+
+        return base.OnInitializedAsync();
+    }
+
+    public void Dispose()
+    {
+        View3D1.ObjectLoaded -= OnObjectLoaded;
+        View3D1.JsModuleLoaded -= OnJsModuleLoaded;
+    }
+
+    protected override Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            // subscribe events only once
+            View3D1.ObjectLoaded += OnObjectLoaded;
+            View3D1.JsModuleLoaded += OnJsModuleLoaded;
+        }
+
+        return base.OnAfterRenderAsync(firstRender);
+    }
+
+    private async Task OnJsModuleLoaded()
+    {
+        var settings = new ImportSettings
+            {
+                Format = Import3DFormats.Gltf,
+                FileURL = "/assets/smile_tears.glb",
+            };
+        loadedObjectGuid = await View3D1.Import3DModelAsync(settings);
+    }
+
+    private Task OnObjectLoaded(Object3DArgs e)
+    {
+        // After object is loaded to component scene, you can locate it's C# clone in the scene.Children
+        // At the moment, only  Object3D.Uuid and Object3D.Type properties are syncronized.
+        foreach (var item in scene.Children)
+        {
+            if (item.Uuid == e.UUID)
+            {
+                Debug.WriteLine($"loaded object with id = {e.UUID} and type {item.Type}. Initial guid was {loadedObjectGuid}");
+                StateHasChanged();
+                break;
+            }
+        }
+        return Task.CompletedTask;
+    }
+}

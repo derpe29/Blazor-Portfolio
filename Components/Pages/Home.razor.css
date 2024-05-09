@@ -1,0 +1,9 @@
+﻿h1{
+    text-align:center;
+    margin-top: 3vh;
+}
+
+#three{
+    width:50vw;
+    transform:translate(25vw,15vh);
+}

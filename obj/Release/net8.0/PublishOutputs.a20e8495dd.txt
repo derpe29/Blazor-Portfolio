@@ -1,0 +1,7 @@
+D:\My_Game\cs\somelern\somelern\bin\Release\net8.0\publish\somelern.exe
+D:\My_Game\cs\somelern\somelern\bin\Release\net8.0\publish\appsettings.Development.json
+D:\My_Game\cs\somelern\somelern\bin\Release\net8.0\publish\appsettings.json
+D:\My_Game\cs\somelern\somelern\bin\Release\net8.0\publish\somelern.dll
+D:\My_Game\cs\somelern\somelern\bin\Release\net8.0\publish\somelern.deps.json
+D:\My_Game\cs\somelern\somelern\bin\Release\net8.0\publish\somelern.runtimeconfig.json
+D:\My_Game\cs\somelern\somelern\bin\Release\net8.0\publish\somelern.pdb

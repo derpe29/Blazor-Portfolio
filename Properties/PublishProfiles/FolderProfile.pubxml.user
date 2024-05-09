@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\My_Game\cs\somelern\somelern\bin\Release\net8.0\publish\</_PublishTargetUrl>
+    <History>True|2024-05-09T21:22:08.4046822Z;True|2024-05-08T10:43:19.6421265-04:00;True|2024-05-07T23:08:51.9412659-04:00;True|2024-05-07T17:55:34.1259315-04:00;True|2024-05-04T14:28:36.1002098-04:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="wwwroot/assets/blazor3d.glb">
+      <publishTime>05/08/2024 18:50:45</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
